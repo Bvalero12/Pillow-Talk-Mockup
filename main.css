@@ -57,7 +57,8 @@ header h1 {
 
 header div:last-child {
     align-items: center;
-    flex-direction: row;
+    display: flex;
+    justify-content: center;
 }                          
 
 /*********************************
@@ -76,9 +77,47 @@ header div:last-child {
 * Aside/Nav
 *********************************/
 
+ aside {
+    flex-basis: 15%;
+    min-width: 15%;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+ul {
+    padding: 0;
+}
+li {
+    list-style: none;
+    text-align: left;
+}
+
+
 /*********************************
 * Main
 *********************************/
+
+ main {
+    width: 85%;
+    flex-basis: 85%;
+   }
+
+
+ div[class$='row']  {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 1em;
+  }
+ .top-row img {
+    width: 100%;
+ }
+ .middle-row img {
+   width: 49%;
+ }
+ .bottom-row img {
+   width: 32%;
+ }                                  
 
 /*********************************
 * Footer
